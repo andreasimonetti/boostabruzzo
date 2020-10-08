@@ -1,0 +1,24 @@
+{
+  "name": "boostabruzzo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "load_mentors.js",
+  "dependencies": {
+    "csv-string": "^4.0.1",
+    "googleapis": "^61.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreasimonetti/boostabruzzo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreasimonetti/boostabruzzo/issues"
+  },
+  "homepage": "https://github.com/andreasimonetti/boostabruzzo#readme"
+}
