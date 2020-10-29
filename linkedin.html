@@ -145,46 +145,8 @@ s.parentNode.insertBefore(b, s);})();
 <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=2893665&fmt=gif" />
 </noscript>
   
-<script>
-  jQuery(document).ready(function() {
-    var form2Tag = $('script[type="IN/Form2"]');
-    var token;
-    var initForm = function() {
-        var forms = $(".body-container form.hs-form[id], form.hs-form[id]").first();
-        console.log("FORMS", forms);
-        if (!forms.length) {
-            token = setTimeout(initForm, 1000);
-            return;
-        }
-        token = null;
-        $(window).off("load.liautofill");
-        form2Tag.attr("data-form", forms.attr("id"));
-        $.ajax({
-            url: "https://www.linkedin.com/autofill/js/autofill.js",
-            dataType: "script",
-            cache: true
-        });
-        window.addEventListener('message', function(event) {
-            if (event.data && event.data.indexOf("formData") > -1) {
-                setTimeout(function() {
-                    forms.find(".hs-input").change();
-                }, 10);
-            }
-        });
-    };
-    if (form2Tag.length) {
-      initForm();
-        $(window).on("load.liautofill", function() {
-          setTimeout(function() {
-              clearTimeout(token);
-      }, 5000);
-        });
-    } else {
-      console.log("LinkedIn autofill script tag is not present");
-    }
-  });
-</script>
-<script type="IN/Form2"
+<script src="https://www.linkedin.com/autofill/js/autofill.js" type="text/javascript" async></script>
+<script type="IN/Form2" data-form="hsForm_d280036b-d633-441a-ab69-5393ca6f255c" 
   data-field-firstname="firstname-d280036b-d633-441a-ab69-5393ca6f255c" 
   data-field-lastname="lastname-d280036b-d633-441a-ab69-5393ca6f255c" 
   data-field-phone="mobilephone-d280036b-d633-441a-ab69-5393ca6f255c" 
