@@ -6823,7 +6823,7 @@ blockquote {
   margin-top: auto !important;
 }
 .cid-sgPhNvHKtr .mbr-section-title {
-  color: #43b183;
+  color: #554596;
 }
 .cid-sgPhNvHKtr .mbr-text,
 .cid-sgPhNvHKtr .mbr-section-btn {
@@ -6837,6 +6837,7 @@ blockquote {
   color: #232323;
 }
 .cid-sgPhNvHKtr .mbr-section-subtitle {
+  /*color: #43b183;*/
   color: #554596;
 }
 
