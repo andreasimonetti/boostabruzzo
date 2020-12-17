@@ -6785,7 +6785,7 @@ blockquote {
 .cid-sgPhNvHKtr .item-img {
   height: 100%;
   height: 300px;
-  object-fit: cover;
+  /*object-fit: cover;*/
 }
 .cid-sgPhNvHKtr .item:focus,
 .cid-sgPhNvHKtr span:focus {
@@ -6831,6 +6831,9 @@ blockquote {
 }
 .cid-sgPhNvHKtr .item-title {
   text-align: left;
+}
+.cid-sgPhNvHKtr .mbr-text {
+  font-size: 1.2rem;
 }
 .cid-sgPhNvHKtr .item-subtitle {
   text-align: left;
