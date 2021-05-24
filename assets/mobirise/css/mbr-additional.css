@@ -6975,6 +6975,51 @@ blockquote {
 }
 
 
+.cid-syjys5hPSi {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  background-color: rgba(67, 177, 131, 0.3);
+}
+
+.cid-syjys5hPSi .mbr-section-title {
+  color: #554596;
+}
+  
+.cid-syjys5hPSi img {
+  width: 130px;
+  margin: auto;
+}
+
+.cid-syjys5hPSi .apio-logo {
+  text-align: center;
+}
+
+.cid-syjys5hPSi .apio-logo span {
+  margin:auto;
+  font-family: Open Sans,Arial,sans-serif;
+  font-size:40px;
+  color:white;
+  font-weight: 700;
+}
+
+.cid-syjys5hPSi .py-custom {
+  padding-top: 2.3rem!important;
+}
+
+.cid-syjys5hPSi .card {
+  transition: all 0.3s;
+  height: fit-content;
+  padding: 1rem 0;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  /*.cid-syjys5hPSi .card {
+    max-width: 12.5%;
+  }*/
+}
+
+
 i.icon-play {
   position: absolute;
   width: 100px;
