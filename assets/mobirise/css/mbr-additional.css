@@ -6985,10 +6985,16 @@ blockquote {
   color: #554596;
 }
   
-.cid-syjys5hPSi img {
-  width: 130px;
+.cid-syjys5hPSi img.accademic {
+  width: 150px;
   margin: auto;
 }
+
+.cid-syjys5hPSi img.startup {
+  width: 100px;
+  margin: auto;
+}
+
 
 .cid-syjys5hPSi .apio-logo {
   text-align: center;
