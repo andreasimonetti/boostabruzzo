@@ -1,0 +1,15 @@
+@font-face {
+   font-family: 'mont-heavydemo-webfont';
+   font-display: swap;
+   src: url('mont-heavydemo-webfont/font.woff');
+}
+@font-face {
+   font-family: 'bariol_light-webfont';
+   font-display: swap;
+   src: url('bariol_light-webfont/font.ttf');
+}
+@font-face {
+   font-family: 'bariol_bold-webfont';
+   font-display: swap;
+   src: url('bariol_bold-webfont/font.ttf');
+}
