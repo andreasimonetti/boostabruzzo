@@ -7060,3 +7060,15 @@ i.icon-play:after {
 i.icon-play:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+
+#nav-linkedin {
+/*  border: 2px solid #554596;
+  border-radius: 50%;
+  padding: 0.5rem !important;
+  text-align: center;*/
+  margin-top: 10px !important;
+}
+#nav-linkedin > span {
+  margin:  0px;
+}
