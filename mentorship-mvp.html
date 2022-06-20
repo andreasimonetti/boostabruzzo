@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html  >
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo-boostabruzzo-102x107.png" type="image/x-icon">
+  <meta name="description" content="Potenzia il valore delle idee.Condividiamo esperienze internazionali per promuovere creatività ed innovazione in Abruzzo
+">
+  
+  
+  <title>Mentors</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link href="assets/fonts/style.css" rel="stylesheet">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+  <!-- this should go after your </body> -->
+  <link rel="stylesheet" type="text/css" href="assets/datetimepicker/style.css"/ >
+  
+  <style>
+    .xdsoft_datetimepicker {
+      width: 100%;
+    }
+    .xdsoft_datepicker {
+      width: 80% !important;
+    }
+    label {
+       color: #554596;
+    }
+  </style>
+
+  
+</head>
+<body>
+  
+  <section class="menu cid-sbuy3daxNI" once="menu" id="menu1-1r">
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo2line-305x90.png" alt="BoostAbruzzo" style="height: 3.8rem;">
+                    </a>
+                </span>
+                
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-primary display-4" href="index.html#team1-12"><strong>chi siamo</strong></a></li>
+                    <li class="nav-item"><a class="nav-link link text-primary display-4" href="index.html#header11-15">
+                            boost me</a></li><li class="nav-item"><a class="nav-link link text-primary display-4" href="mentors.html">i mentor</a></li><li class="nav-item"><a class="nav-link link text-primary display-4" href="blog.html">il blog</a></li>
+                            <li class="nav-item"><a id="signout_button" class="nav-link link text-primary display-4">Sign Out</a></li>
+                          </ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+
+</section>
+
+
+
+<section class="header11 cid-sbuy3cfxk1" id="login">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 image-wrapper">
+                <img class="w-100" src="assets/images/climbers-1276x846.png" alt="">
+            </div>
+            <div class="col-12 col-md">
+                <div class="text-wrapper text-center">
+                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>MentorShip
+                        </strong><br><strong><font color="#554596">Tool</font></strong></h1>
+                    <p class="mbr-text mbr-fonts-style display-7">Premi sul tasto accedi per iniziare ad usare il calendario creato appositamente per gestire la tua mentorship.<br></p>
+                    <div class="mbr-section-btn mt-3">
+                    <!--Add buttons to initiate auth sequence and sign out-->
+                      <button class="btn btn-primary display-7" id="authorize_button" style="display: none;">Accedi</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="header11 mt-5" id="signedin" style="display:none;">
+
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="mbr-section-title mbr-fonts-style mb-5 display-1" id="mentorshipTitle"><strong style="color:#43b183">Mentorship
+                        </strong><strong><font color="#554596">TOOL</font></strong></h1>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-wrapper" style="color:#554596;">
+                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-5">Organizza il prossimo <font color="#43b183">Incontro:</font></h1>
+                        <!-- <p class="mbr-text mbr-fonts-style display-4" style="color:#43b183"></p> -->
+                    <form class="text-left">
+                      <!-- <div class="form-group row">
+                        <div class="col-sm-10">
+                          <input type="text" readonly class="form-control-plaintext" id="mentor-email" value="aandrea.simonetti@gmail.com">
+                        </div>
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Mentor:</label>
+                      </div>
+                      <div class="form-group row">
+                        <div class="col-sm-10">
+                          <input type="text" readonly class="form-control-plaintext" id="startup-email" value="startup-testing@example.com">
+                        </div>
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Startup:</label>
+                      </div> -->
+                      <div class="form-group">
+                        <label class="display-7" for="obiettivo">Scegli l obiettivo del prossimo incontro:</label>
+                        <select name="obiettivo" id="obiettivo" class="form-control" >
+                          <option value="">-- Obiettivo incontro --</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="meeting-date-time" class="display-7 d-block">Data e ora incontro:</label>
+                        <input type="text" class="form-control" id="meeting-date-time">
+                      </div>
+                      <div class="form-group">
+                        <label for="durata" class="display-7">Durata incontro:</label>
+                        <select name="durata" id="durata" class="form-control" >
+                          <option value="30">30min</option>
+                          <option value="60">1ora</option>
+                          <option value="90">1ora e 30min</option>
+                          <option value="120">2ore</option>
+                        </select>
+                      </div>
+                     
+                    </form>
+
+                    <div class="mbr-section-btn mt-3"><button onClick="createMentorshipEvent();" class="btn btn-primary display-7" target="_blank">Organizza il tuo incontro!</button></div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+              <div class="text-wrapper">
+                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong style="color:#43b183">Lo stato della tua</strong>
+                    <strong><font color="#554596">Mentorship:</font></strong></h1>
+                <div id="incontri-sofar">
+                  <p class="mbr-text mbr-fonts-style display-4">0 incontri fin ora!<p>
+                </div>
+              </div>
+              <hr />
+              <div class="text-wrapper py-5">
+                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong style="color:#554596">I tuoi prossimi</strong>
+                    <strong><font color="#43b183">Incontri:</font></strong></h1>
+                <div id="incontri-tohappen">
+                  <p class="mbr-text mbr-fonts-style display-4">Non ci sono incontri in agenda!</p>
+                </div>
+              </div>
+              <hr />
+              <div id="calendar-boostme" class="mt-5">
+                <p class="mbr-text mbr-fonts-style display-4" style="color:#43b183">Loading calendar preview!</p>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer3 cid-sbuy3evYbz" once="footers" id="footer3-1u">
+    <div class="container-fluid">
+        <div class="media-container-row align-center mbr-white">
+            
+            
+            <div class="row row-copirayt">
+                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
+                    © Copyright 2021 BoostAbruzzo. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/dropdown/js/nav-dropdown.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+
+  <script src="assets/datetimepicker/datetime.js"></script>
+
+
+  
+  <script type="text/javascript">
+    $(function () {
+      $.datetimepicker.setDateFormatter('moment');
+
+      $('#meeting-date-time').datetimepicker({
+        format: "YYYY-MM-DDThh:00:00",
+        inline:true
+      });
+    });
+
+      
+      var CALENDAR_ID = "";
+      var obiettiviMentorship = [];
+      var mentorshipTitle = "";
+      var mentorshipUsers = [];
+      // Client ID and API key from the Developer Console
+      var CLIENT_ID = '980123065986-ah92uolf9n4uakmmdj6e96krgnn63m4j.apps.googleusercontent.com';
+      var API_KEY = 'AIzaSyD32If1swoYnlfYBYASfgn-6eTufg5XlUU';
+
+      // Array of API discovery doc URLs for APIs used by the quickstart
+      var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
+
+      // Authorization scopes required by the API; multiple scopes can be
+      // included, separated by spaces.
+      var SCOPES = "https://www.googleapis.com/auth/calendar https://www.googleapis.com/auth/calendar.events";
+
+
+      var authorizeButton = document.getElementById('authorize_button');
+      var signoutButton = document.getElementById('signout_button');
+      var signedInScreen = document.getElementById('signedin');
+      var loginScreen = document.getElementById('login');
+      var calendarSpot = document.getElementById("calendar-boostme");
+
+      var mentorshipTitle = document.getElementById("mentorshipTitle");
+      var mentorshipStatus = document.getElementById("incontri-sofar");
+      var mentorshipToHappen = document.getElementById("incontri-tohappen");
+      /**
+       *  On load, called to load the auth2 library and API client library.
+       */
+      function handleClientLoad() {
+        gapi.load('client:auth2', initClient);
+      }
+
+      /**
+       *  Initializes the API client library and sets up sign-in state
+       *  listeners.
+       */
+      function initClient() {
+        gapi.client.init({
+          apiKey: API_KEY,
+          clientId: CLIENT_ID,
+          discoveryDocs: DISCOVERY_DOCS,
+          scope: SCOPES
+        }).then(function () {
+          // Listen for sign-in state changes.
+          gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
+
+          // Handle the initial sign-in state.
+          updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+          authorizeButton.onclick = handleAuthClick;
+          signoutButton.onclick = handleSignoutClick;
+        }, function(error) {
+          appendPre(JSON.stringify(error, null, 2));
+        });
+      }
+
+      /**
+       *  Called when the signed in status changes, to update the UI
+       *  appropriately. After a sign-in, the API is called.
+       */
+      function updateSigninStatus(isSignedIn) {
+        if (isSignedIn) {
+          signedInScreen.style.display = 'block';
+          loginScreen.style.display = 'none';
+          authorizeButton.style.display = 'none';
+          signoutButton.style.display = 'block';
+          findMentorshipCalendar();
+        } else {
+          signedInScreen.style.display = 'none';
+          loginScreen.style.display = 'block';
+          authorizeButton.style.display = 'block';
+          signoutButton.style.display = 'none';
+        }
+      }
+
+      /**
+       *  Sign in the user upon button click.
+       */
+      function handleAuthClick(event) {
+        gapi.auth2.getAuthInstance().signIn();
+      }
+
+      /**
+       *  Sign out the user upon button click.
+       */
+      function handleSignoutClick(event) {
+        gapi.auth2.getAuthInstance().signOut();
+      }
+
+      /**
+       * Append a pre element to the body containing the given message
+       * as its text node. Used to display the results of the API call.
+       *
+       * @param {string} message Text to be placed in pre element.
+       */
+      function appendPre(message) {
+        var pre = document.getElementById('content');
+        var textContent = document.createTextNode(message + '\n');
+        pre.appendChild(textContent);
+      }
+      function appendMsg(message, pre) {
+        // var pre = document.getElementById('content');
+        var textContent = document.createTextNode(message + '\n');
+        pre.appendChild(textContent);
+      }
+
+      function findMentorshipCalendar() {
+        // console.log(gapi.client);
+        gapi.client.calendar.calendarList.list({}).then(function(response) {
+          console.log(response.result.items);
+          const calendar = response.result.items.filter(cal => {
+            return cal.summary.startsWith("BoostMe");
+          });
+          if ( calendar.length === 1 ) {
+            const boostMECalendar = calendar.pop();
+            CALENDAR_ID = boostMECalendar.id;
+
+            console.log("HERE", boostMECalendar, CALENDAR_ID);
+            gapi.client.calendar.acl.list({
+              'calendarId': CALENDAR_ID,
+            }).then(function(response) {
+              var acls = response.result.items;
+              console.log(acls);
+              acls.map((a) => {
+                console.log(a.etag);
+                if ( !a.id.endsWith("@group.calendar.google.com") ) {
+                  mentorshipUsers.push(a.id.replace("user:", ""))
+                }
+              });
+              console.log("MENTORSHIP USERS", mentorshipUsers);
+            });
+
+
+            var link = "https://calendar.google.com/calendar/embed?src="+CALENDAR_ID+"&ctz=Europe%2FLondon"
+            var iframe = document.createElement('iframe');
+            iframe.frameBorder=0;
+            iframe.width="800px";
+            iframe.height="600px";
+            // iframe.id="randomid";
+            iframe.setAttribute("src", link);
+            calendarSpot.innerHTML = "";
+            calendarSpot.appendChild(iframe);
+
+
+            var titleParts = boostMECalendar.summary.split("-");
+            mentorshipTitle.innerHTML = '<strong style="color:#43b183">'+titleParts[0]+'</strong><strong><font color="#554596">'+titleParts[1]+'</font></strong>';
+
+            let description = boostMECalendar.description;
+            obiettiviMentorship = description.split("\n");
+            console.log(obiettiviMentorship);
+            // PARSE THE DESCRIPTION: pull out the objectives!!!
+            obiettiviMentorship.map((o, idx) => {
+              $("#obiettivo").append('<option value="'+idx+'">'+o+'</option>');  
+            });
+
+            listUpcomingEvents();
+            listPastEvent();
+          } else {
+            calendarSpot.innerHTML = "<div><h1>ERROR WHILE LOADING YOUR CALENDAR!</h1></div>";
+          }
+        
+        });
+      } 
+
+
+      /**
+       * Print the summary and start datetime/date of the next ten events in
+       * the authorized user's calendar. If no events are found an
+       * appropriate message is printed.
+      */
+      function listPastEvent() {
+        gapi.client.calendar.events.list({
+          'calendarId': CALENDAR_ID,
+          'timeMax': (new Date()).toISOString(),
+          'showDeleted': false,
+          'singleEvents': true,
+          'maxResults': 100,
+          'orderBy': 'startTime'
+        }).then(function(response) {
+          var events = response.result.items;
+          console.log("PAST EVENT", events);
+          // appendPre('Upcoming events:');
+
+          if (events.length > 0) {
+            mentorshipStatus.innerHTML = '';
+            for (i = 0; i < events.length; i++) {
+              var event = events[i];
+              var when = event.start.dateTime;
+              if (!when) {
+                when = event.start.date;
+              }
+              var end = event.end.dateTime;
+              var duration = 0;
+              if ( end ) {
+                duration = moment.duration(moment(end).diff(when)).asHours();
+              }
+              mentorshipStatus.innerHTML += ('<p class="mbr-text mbr-fonts-style display-4">Il ' +
+                moment(when).format('YYYY-MM-DD') + ' durata di ' + duration + ' ore - '+  event.summary + '</p>');
+            }
+          } else {
+            mentorshipStatus.innerHTML = '<p class="mbr-text mbr-fonts-style display-4">Non ci sono incontri in agenda!</p>';
+          }
+        });
+      }
+
+      /**
+       * Print the summary and start datetime/date of the next ten events in
+       * the authorized user's calendar. If no events are found an
+       * appropriate message is printed.
+      */
+      function listUpcomingEvents() {
+        gapi.client.calendar.events.list({
+          'calendarId': CALENDAR_ID,
+          'timeMin': (new Date()).toISOString(),
+          'showDeleted': false,
+          'singleEvents': true,
+          'maxResults': 100,
+          'orderBy': 'startTime'
+        }).then(function(response) {
+          var events = response.result.items;
+          // appendPre('Upcoming events:');
+
+          if (events.length > 0) {
+            mentorshipToHappen.innerHTML = '';
+            for (i = 0; i < events.length; i++) {
+              var event = events[i];
+              var when = event.start.dateTime;
+              if (!when) {
+                when = event.start.date;
+              }
+              var end = event.end.dateTime;
+              var duration = 0;
+              if ( end ) {
+                duration = moment.duration(moment(end).diff(when)).asHours();
+              }
+              mentorshipToHappen.innerHTML += ('<p class="mbr-text mbr-fonts-style display-4">' +
+                moment(when).format('YYYY-MM-DD') + ' alle ' + moment(when).format('hh:mm:00') + ' di '+duration+'ore - '+  event.summary + '</p>');
+            }
+          } else {
+            mentorshipToHappen.innerHTML = '<p class="mbr-text mbr-fonts-style display-4">Non ci sono incontri in agenda!</p>';
+          }
+        });
+      }
+
+    function createMentorshipEvent() {
+      var meetingDateTime = $("#meeting-date-time").val();
+      var durata = $("#durata").val();
+      var obiettivo = $("#obiettivo").val();
+      
+      var endTime = moment(meetingDateTime).add(durata, "minutes");
+      console.log(obiettivo, meetingDateTime, durata, endTime.format("YYYY-MM-DDThh:mm:00"));
+
+      var event = {
+        'summary': obiettiviMentorship[obiettivo],
+        'start': {
+          'dateTime': meetingDateTime,
+          'timeZone': 'GMT'
+        },
+        'end': {
+          'dateTime': endTime.format("YYYY-MM-DDThh:mm:00"),
+          'timeZone': 'GMT'
+        },
+        'attendees': [
+          {email:"andrea.simonetti@conversionminds.com"},
+          {email:"aandrea.simonetti@gmail.com"}
+        ]
+        //mentorshipUsers.map((attendee) => ({'email':attendee}))
+      };
+      
+      var request = gapi.client.calendar.events.insert({
+        'calendarId': CALENDAR_ID,
+        'sendNotifications': true,
+        'sendUpdates': 'all',
+        'resource': event
+      });
+
+      request.execute(function(event) {
+        console.log('Event created: ' + event.htmlLink, event);
+        // location.reload();
+      });
+
+
+  }
+</script>
+
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+</body>
+</html>
