@@ -54,6 +54,7 @@ BoostAbruzzo ricerca e mobilita il capitale umano abruzzese nel mondo per potenz
   
 </head>
 <body>
+
   
   <section class="menu cid-s48OLK6784" once="menu" id="menu1-h">
     
@@ -100,9 +101,17 @@ BoostAbruzzo ricerca e mobilita il capitale umano abruzzese nel mondo per potenz
 
 <section class="header11 cid-sbozh2oHbT" id="header11-l">
 
-    
-
-    
+<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true" id="myExtraLargeModalLabel">
+  <div class="modal-dialog modal-xl text-center">
+    <div class="modal-content">
+      <h1 class="mbr-fonts-style mb-3 display-1 mt-4" style="color:#554596"></h1>            
+      <p class="mbr-fonts-style display-2" style="color:#554596">Call aperta: Partecipa al bando BoostCamp in partenariato con la fondazione Carispaq.&nbsp;<br></p>
+      <p class="lead text-center">
+        <a class="btn btn-link display-1 mt-4" style="color:#554596" href="https://forms.gle/dtpBttaJrDNhgDv9A" role="button" ><strong>Partecipa a Boost<font color="#EA5B0D">Camp!</font></strong></a>
+      </p>
+    </div>
+  </div>
+</div>
 
     <div class="container-fluid">
         <div class="row justify-content-center">
@@ -139,6 +148,8 @@ BoostAbruzzo ricerca e mobilita il capitale umano abruzzese nel mondo per potenz
         </div>
     </div>
 </section>
+
+
 
 <section class="clients1 cid-syjys5hPSi" id="clients1-3b">
     
@@ -795,6 +806,10 @@ incuriosito?</strong></font><br></h1>
 </section>
 
 
+
+
+
+
 <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
@@ -806,6 +821,11 @@ incuriosito?</strong></font><br></h1>
   <script src="assets/theme/js/script.js"></script>
   
   
-  
+  <script type="text/javascript">
+var url = window.location.href;
+if(url.indexOf('boostcamp') != -1) {
+    $('#myExtraLargeModalLabel').modal('show');
+}
+</script>
 </body>
 </html>
